@@ -1,0 +1,91 @@
+<title>English Routine Privacy Policy</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Source+Sans+3:wght@400;600&display=swap">
+<style>
+/* Layout: one readable column, quiet document styling, small summary table up top */
+:root {
+  --bg: #f7f6fb; --paper: #ffffff; --fg: #1d1b2b; --muted: #5d5a73; --line: #e3e0ef; --accent: #5b4cf5;
+  --display: "Fraunces", Georgia, serif; --body: "Source Sans 3", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg: #14131c; --paper: #1d1b29; --fg: #ecebf5; --muted: #a9a6c0; --line: #312e44; --accent: #9d93ff; color-scheme: dark } }
+:root[data-theme="dark"] { --bg: #14131c; --paper: #1d1b29; --fg: #ecebf5; --muted: #a9a6c0; --line: #312e44; --accent: #9d93ff; color-scheme: dark }
+body { background: var(--bg); color: var(--fg); font: 17px/1.6 var(--body); padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 32px 56px; }
+main { max-width: 42rem; margin: 0 auto; display: flex; flex-direction: column; gap: 22px; }
+h1 { font: 600 2.1rem/1.15 var(--display); margin: 0; text-wrap: balance; }
+h2 { font: 600 1.25rem/1.3 var(--display); margin: 8px 0 0; text-wrap: balance; }
+p, ul { margin: 0; }
+ul { padding-left: 1.2em; display: flex; flex-direction: column; gap: 6px; }
+.meta { color: var(--muted); font-size: 0.95rem; }
+.summary { background: var(--paper); border: 1px solid var(--line); border-radius: 14px; overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; font-size: 0.95rem; }
+th, td { text-align: left; padding: 10px 14px; border-bottom: 1px solid var(--line); vertical-align: top; }
+tr:last-child td { border-bottom: 0; }
+th { font-weight: 600; color: var(--muted); font-size: 0.8rem; letter-spacing: 0.06em; text-transform: uppercase; }
+a { color: var(--accent); }
+code { font-size: 0.95em; }
+</style>
+
+<main>
+  <header>
+    <h1>English Routine Privacy Policy</h1>
+    <p class="meta">Effective 2 November 2026 · App: English Routine (com.englishroutine.app) · Developer: Ramadan Sayed</p>
+  </header>
+
+  <p>English Routine is an English-learning app. It has no accounts, no ads and no analytics. Your progress is stored only on your phone. This page explains the few cases where text or audio leaves your phone, and why.</p>
+
+  <div class="summary">
+    <table>
+      <thead><tr><th>Data</th><th>Where it goes</th><th>Why</th></tr></thead>
+      <tbody>
+        <tr><td>Your progress, words, mistakes, settings, name</td><td>On your phone; in your own Google Drive only if you turn on Google Drive backup</td><td>To run your daily plan and keep it safe</td></tr>
+        <tr><td>Your voice when you tap the mic</td><td>Google speech recognition on your phone (Android)</td><td>To turn your speech into text</td></tr>
+        <tr><td>Messages you send to the AI tutor</td><td>Google Gemini or Anthropic Claude, with your own API key</td><td>To reply and correct your English</td></tr>
+        <tr><td>Words or sentences you look up or translate</td><td>Free Dictionary API, Wiktionary, Wikimedia Commons, MyMemory</td><td>Definitions, pronunciation and translation</td></tr>
+        <tr><td>Podcast and article requests</td><td>The publisher's website or feed</td><td>To play or show the content</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>What stays on your phone</h2>
+  <ul>
+    <li>Everything you do in the app: learned words, reviews, mistakes, daily steps, streak, level-check results, settings and the first name you enter.</li>
+    <li>Your AI API key, if you add one. It is only sent to the AI provider you chose, and it is never included in the app's own backup files.</li>
+    <li>Daily backup copies inside the app's private storage, and a backup file in a place you choose (for example Google Drive) if you turn that on.</li>
+  </ul>
+  <p>We (the developer) cannot see any of this. Uninstalling the app deletes it. <em>Settings → Reset everything</em> clears your progress but keeps a safety copy in the app's private storage, so you can bring it back; uninstalling removes that copy too. If backup is on in your phone's settings, Android may include this app's data (your progress, and your AI key if you added one) in your Google account backup, so it comes back when you reinstall. Google handles this under your account; we can't see it.</p>
+
+  <h2>Google Drive backup (optional)</h2>
+  <p>If you turn on <em>Google Drive backup</em> in Settings (or from Today), Google asks you to choose an account and to allow the app to "see, create and delete its own configuration data in your Google Drive" (the <code>drive.appdata</code> permission). The app then saves a copy of your progress (the same content as the app's backup file, without your AI key) in a hidden folder of your own Google Drive that only this app can use. The app cannot see any of your other Drive files, and the copy goes straight from your phone to Google; it never passes through a server of ours, and we cannot see it. You can restore it on a new phone from the first screen ("Restore my progress"). Turn it off in Settings at any time; to delete the saved copy, remove the app's data in Google Drive → Settings → Manage apps, or remove the app's access at myaccount.google.com/permissions.</p>
+
+  <h2>Microphone</h2>
+  <p>The app uses the microphone only when you tap a mic button or start a hands-free conversation. Speech is processed by Android's speech recognition service (usually Google's), under Google's own privacy policy; the app does not store that audio.</p>
+  <p>When you tap “Record yourself”, your recording is saved only in the app's private cache on your phone, so you can play it back next to the model sentence. It is never uploaded or shared, only the 20 newest recordings are kept, and they are deleted when you clear the app's cache or uninstall the app.</p>
+
+  <h2>AI tutor (optional)</h2>
+  <p>The AI tutor works only after you add your own Google Gemini or Anthropic Claude API key. When you use it, the conversation text, your first name, and the job and he/she you chose (so role-plays fit you) are sent to that provider to generate replies. Their privacy policies apply: <a href="https://policies.google.com/privacy">Google</a>, <a href="https://www.anthropic.com/legal/privacy">Anthropic</a>. If you use a free Google Gemini key, Google's terms for unpaid API use allow Google to use what you send to improve its products, and people at Google may review it. Don't type private information (passwords, ID numbers, health details) into the tutor. AI replies can be wrong. You can report any reply from inside the app with the flag button; the report is sent by email and contains only the reply and your chosen reason.</p>
+
+  <h2>Dictionary, pronunciation and translation</h2>
+  <p>When you look up a word or translate a sentence, only that text is sent to <a href="https://dictionaryapi.dev">dictionaryapi.dev</a>, <a href="https://www.wiktionary.org">Wiktionary</a>, <a href="https://commons.wikimedia.org">Wikimedia Commons</a> (pronunciation recordings) or <a href="https://mymemory.translated.net">MyMemory</a>. No personal information is attached.</p>
+
+  <h2>Podcasts and articles</h2>
+  <p>Optional podcasts and articles load from their publishers' public feeds and websites. Those sites receive a normal web request (like a browser would send) and their own policies apply.</p>
+
+  <h2>Notifications</h2>
+  <p>Reminders are scheduled on your phone. Nothing is sent to a server.</p>
+
+  <h2>Children</h2>
+  <p>The app is meant for adults (18+) and is not directed at children.</p>
+
+  <h2>Your choices</h2>
+  <ul>
+    <li>Use the app fully without an AI key or microphone; those features are optional.</li>
+    <li>Export, restore or delete all your data from <em>Progress → Settings</em>.</li>
+    <li>Turn off notifications from Android settings or the app's reminder settings.</li>
+  </ul>
+
+  <h2>Changes</h2>
+  <p>If this policy changes, the new version will be posted on this page with a new effective date.</p>
+
+  <h2>Contact</h2>
+  <p>Questions or requests: <code>ramadan.sayed.apps@gmail.com</code>, or WhatsApp from <em>Settings → Contact us</em>. If you contact us on WhatsApp or by email, we see your phone number or email address and what you write. We use them only to answer you, and we delete the conversation on request.</p>
+</main>
