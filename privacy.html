@@ -28,10 +28,10 @@ code { font-size: 0.95em; }
 <main>
   <header>
     <h1>English Routine Privacy Policy</h1>
-    <p class="meta">Effective 2 November 2026 · App: English Routine (com.englishroutine.app) · Developer: Ramadan Sayed</p>
+    <p class="meta">Effective 7 November 2026 · App: English Routine (com.englishroutine.app) · Developer: Ramadan Sayed</p>
   </header>
 
-  <p>English Routine is an English-learning app. It has no accounts, no ads and no analytics. Your progress is stored only on your phone. This page explains the few cases where text or audio leaves your phone, and why.</p>
+  <p>English Routine is an English-learning app. It has no accounts and no ads. Your progress is stored only on your phone, and the only usage data the app sends is a few anonymous counts that you can turn off. This page explains the few cases where text or audio leaves your phone, and why.</p>
 
   <div class="summary">
     <table>
@@ -41,6 +41,7 @@ code { font-size: 0.95em; }
         <tr><td>Your voice when you tap the mic</td><td>Google speech recognition on your phone (Android)</td><td>To turn your speech into text</td></tr>
         <tr><td>Messages you send to the AI tutor</td><td>Google Gemini or Anthropic Claude, with your own API key</td><td>To reply and correct your English</td></tr>
         <tr><td>Words or sentences you look up or translate</td><td>Free Dictionary API, Wiktionary, Wikimedia Commons, MyMemory</td><td>Definitions, pronunciation and translation</td></tr>
+        <tr><td>Anonymous usage events (e.g. "a daily step was finished")</td><td>Google Analytics for Firebase</td><td>To see which parts help learners and where they stop. You can turn this off</td></tr>
         <tr><td>Podcast and article requests</td><td>The publisher's website or feed</td><td>To play or show the content</td></tr>
       </tbody>
     </table>
@@ -54,12 +55,17 @@ code { font-size: 0.95em; }
   </ul>
   <p>We (the developer) cannot see any of this. Uninstalling the app deletes it. <em>Settings → Reset everything</em> clears your progress but keeps a safety copy in the app's private storage, so you can bring it back; uninstalling removes that copy too. If backup is on in your phone's settings, Android may include this app's data (your progress, and your AI key if you added one) in your Google account backup, so it comes back when you reinstall. Google handles this under your account; we can't see it.</p>
 
+  <h2>Anonymous usage statistics</h2>
+  <p>The app uses Google Analytics for Firebase to count a few anonymous events: finishing setup (with the level and help language you picked), finishing a daily step or a whole day (with the day number and part), opening the Plus page and from where, a Plus purchase (plan and where it started), recording a “My voice” take, and using a friend's invite. With each event Firebase also receives standard technical information: an app-instance identifier made for this install, the app version, the phone model and Android version, the language, and the approximate country (from the network). <strong>The app never sends your name, anything you say, write or record, your progress file, or your advertising ID</strong> (the advertising-ID permission is removed from the app), and the data is not used for advertising.</p>
+  <p>We see only totals and trends in the Firebase console (for example “how many learners came back on day 7”). Google processes this data under the <a href="https://firebase.google.com/support/privacy">Firebase privacy information</a> and keeps it for a limited time. You can turn it off at any time in <em>Progress → Settings → Share anonymous usage</em>; nothing more is sent after that.</p>
+
   <h2>Google Drive backup (optional)</h2>
   <p>If you turn on <em>Google Drive backup</em> in Settings (or from Today), Google asks you to choose an account and to allow the app to "see, create and delete its own configuration data in your Google Drive" (the <code>drive.appdata</code> permission). The app then saves a copy of your progress (the same content as the app's backup file, without your AI key) in a hidden folder of your own Google Drive that only this app can use. The app cannot see any of your other Drive files, and the copy goes straight from your phone to Google; it never passes through a server of ours, and we cannot see it. You can restore it on a new phone from the first screen ("Restore my progress"). Turn it off in Settings at any time; to delete the saved copy, remove the app's data in Google Drive → Settings → Manage apps, or remove the app's access at myaccount.google.com/permissions.</p>
 
   <h2>Microphone</h2>
   <p>The app uses the microphone only when you tap a mic button or start a hands-free conversation. Speech is processed by Android's speech recognition service (usually Google's), under Google's own privacy policy; the app does not store that audio.</p>
   <p>When you tap “Record yourself”, your recording is saved only in the app's private cache on your phone, so you can play it back next to the model sentence. It is never uploaded or shared, only the 20 newest recordings are kept, and they are deleted when you clear the app's cache or uninstall the app.</p>
+  <p><em>My voice</em> keeps your recordings of the same three sentences (so you can hear your progress over time) in the app's private storage on your phone. They are never uploaded, not included in backups, and are deleted when you uninstall the app.</p>
 
   <h2>AI tutor (optional)</h2>
   <p>The AI tutor works only after you add your own Google Gemini or Anthropic Claude API key. When you use it, the conversation text, your first name, and the job and he/she you chose (so role-plays fit you) are sent to that provider to generate replies. Their privacy policies apply: <a href="https://policies.google.com/privacy">Google</a>, <a href="https://www.anthropic.com/legal/privacy">Anthropic</a>. If you use a free Google Gemini key, Google's terms for unpaid API use allow Google to use what you send to improve its products, and people at Google may review it. Don't type private information (passwords, ID numbers, health details) into the tutor. AI replies can be wrong. You can report any reply from inside the app with the flag button; the report is sent by email and contains only the reply and your chosen reason.</p>
@@ -80,6 +86,7 @@ code { font-size: 0.95em; }
   <ul>
     <li>Use the app fully without an AI key or microphone; those features are optional.</li>
     <li>Export, restore or delete all your data from <em>Progress → Settings</em>.</li>
+    <li>Turn off anonymous usage statistics in <em>Progress → Settings → Share anonymous usage</em>.</li>
     <li>Turn off notifications from Android settings or the app's reminder settings.</li>
   </ul>
 
