@@ -1,0 +1,14 @@
+<!doctype html><meta charset="utf-8"><title>ER helper</title>
+<p id="s">ready</p>
+<script>
+// Temporary: hands the launch reels to the scheduling page that opened this window.
+const ALLOW = ['https://business.facebook.com', 'https://www.tiktok.com', 'https://www.linkedin.com', 'https://studio.youtube.com'];
+addEventListener('message', async (e) => {
+  if (!ALLOW.includes(e.origin) || !e.data || !e.data.want) return;
+  const s = document.getElementById('s'); s.textContent = 'sending ' + e.data.want;
+  const buf = await fetch(e.data.want).then(r => r.arrayBuffer());
+  e.source.postMessage({ name: e.data.want, buf }, e.origin, [buf]);
+  s.textContent = 'sent ' + e.data.want;
+});
+if (opener) opener.postMessage({ helper: 'ready' }, '*');
+</script>
