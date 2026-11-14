@@ -42,6 +42,8 @@ code { font-size: 0.95em; }
         <tr><td>Messages you send to the AI tutor</td><td>Google Gemini or Anthropic Claude, with your own API key</td><td>To reply and correct your English</td></tr>
         <tr><td>Words or sentences you look up or translate</td><td>Free Dictionary API, Wiktionary, Wikimedia Commons, MyMemory</td><td>Definitions, pronunciation and translation</td></tr>
         <tr><td>Anonymous usage events (e.g. "a daily step was finished")</td><td>Google Analytics for Firebase</td><td>To see which parts help learners and where they stop. You can turn this off</td></tr>
+        <tr><td>Your English Routine Plus purchase</td><td>Google Play Billing, and RevenueCat (which only confirms that the purchase is active)</td><td>To unlock Plus on your phone. We never see your card or payment details</td></tr>
+        <tr><td>Rating and update prompts</td><td>Google Play (in-app review and in-app update)</td><td>To let you rate the app and to tell you when a new version is ready</td></tr>
         <tr><td>Podcast and article requests</td><td>The publisher's website or feed</td><td>To play or show the content</td></tr>
       </tbody>
     </table>
@@ -57,7 +59,7 @@ code { font-size: 0.95em; }
 
   <h2>Anonymous usage statistics</h2>
   <p>The app uses Google Analytics for Firebase to count a few anonymous events: finishing setup (with the level and help language you picked), finishing a daily step or a whole day (with the day number and part), opening the Plus page and from where, a Plus purchase (plan and where it started), recording a “My voice” take, and using a friend's invite. With each event Firebase also receives standard technical information: an app-instance identifier made for this install, the app version, the phone model and Android version, the language, and the approximate country (from the network). <strong>The app never sends your name, anything you say, write or record, your progress file, or your advertising ID</strong> (the advertising-ID permission is removed from the app), and the data is not used for advertising.</p>
-  <p>We see only totals and trends in the Firebase console (for example “how many learners came back on day 7”). Google processes this data under the <a href="https://firebase.google.com/support/privacy">Firebase privacy information</a> and keeps it for a limited time. You can turn it off at any time in <em>Progress → Settings → Share anonymous usage</em>; nothing more is sent after that.</p>
+  <p>We see only totals and trends in the Firebase console (for example “how many learners came back on day 7”). Google processes this data under the <a href="https://firebase.google.com/support/privacy">Firebase privacy information</a> and keeps it for a limited time. You can turn it off at any time in <em>Progress → Settings → About &amp; credits → Share anonymous usage</em>; nothing more is sent after that.</p>
 
   <h2>Google Drive backup (optional)</h2>
   <p>If you turn on <em>Google Drive backup</em> in Settings (or from Today), Google asks you to choose an account and to allow the app to "see, create and delete its own configuration data in your Google Drive" (the <code>drive.appdata</code> permission). The app then saves a copy of your progress (the same content as the app's backup file, without your AI key) in a hidden folder of your own Google Drive that only this app can use. The app cannot see any of your other Drive files, and the copy goes straight from your phone to Google; it never passes through a server of ours, and we cannot see it. You can restore it on a new phone from the first screen ("Restore my progress"). Turn it off in Settings at any time; to delete the saved copy, remove the app's data in Google Drive → Settings → Manage apps, or remove the app's access at myaccount.google.com/permissions.</p>
@@ -86,7 +88,7 @@ code { font-size: 0.95em; }
   <ul>
     <li>Use the app fully without an AI key or microphone; those features are optional.</li>
     <li>Export, restore or delete all your data from <em>Progress → Settings</em>.</li>
-    <li>Turn off anonymous usage statistics in <em>Progress → Settings → Share anonymous usage</em>.</li>
+    <li>Turn off anonymous usage statistics in <em>Progress → Settings → About &amp; credits → Share anonymous usage</em>.</li>
     <li>Turn off notifications from Android settings or the app's reminder settings.</li>
   </ul>
 
